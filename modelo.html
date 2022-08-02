@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exerciciot</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregar()">
@@ -14,15 +14,21 @@
 
     <section>
         <div style="text-align: left;">
-            Ano de Nascimento: <input type="number" name="ano" id="anos">
-        </div>
+            Ano de Nascimento: <input type="number" name="txtano" id="txtano">
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="femi">
+                <label for="femi">Feminino</label>
+            </p>
 
-        <div style="text-align: left;" id="genero">
-            Sexo: <input type="checkbox" name="masculino" id="masculino"> Masculino <input type="checkbox" name="feminino" id="feminino">Feminino
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
 
         <div style="text-align: left; margin-top: 10px;">
-            <button>Verificar</button> <br>
+            
             <p id="ano">Preencha os dados acima para ver o resultado!</p>
 
 
