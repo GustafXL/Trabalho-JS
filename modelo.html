@@ -7,22 +7,26 @@
     <title>Modelo de exerciciot</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <h1>Verificador de Idade</h1>
     </header>
 
     <section>
         <div style="text-align: left;">
-            Ano de Nascimento: <input type="number" name="ano" id="ano">
+            Ano de Nascimento: <input type="number" name="ano" id="anos">
         </div>
 
-        <div style="text-align: left;">
+        <div style="text-align: left;" id="genero">
             Sexo: <input type="checkbox" name="masculino" id="masculino"> Masculino <input type="checkbox" name="feminino" id="feminino">Feminino
         </div>
 
-        <div style="text-align: left; margin-top: 10px;" >
-            <button>Verificar</button>
+        <div style="text-align: left; margin-top: 10px;">
+            <button>Verificar</button> <br>
+            <p id="ano">Preencha os dados acima para ver o resultado!</p>
+
+
+            
         </div>
 
     </section>
